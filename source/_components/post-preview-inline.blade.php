@@ -1,13 +1,13 @@
 <div class="flex flex-col mb-4">
-    <p class="text-grey-darker font-medium my-2">
+    <p class="text-sm text-grey-dark my-2">
         {{ $post->getDate()->format('F j, Y') }}
     </p>
 
-    <h2 class="text-3xl mt-0">
+    <h2 class="text-3xl font-serif mt-0">
         <a
             href="{{ $post->getUrl() }}"
             title="Read more - {{ $post->title }}"
-            class="text-black font-extrabold"
+            class="text-pink-dark hover:text-pink-darker font-extrabold"
         >{{ $post->title }}</a>
     </h2>
 
@@ -16,6 +16,6 @@
     <a
         href="{{ $post->getUrl() }}"
         title="Read more - {{ $post->title }}"
-        class="uppercase font-semibold tracking-wide mb-2"
+        class="uppercase text-sm tracking-wide mb-2 hover:no-underline text-pink-dark hover:text-pink-darker"
     >Read</a>
 </div>

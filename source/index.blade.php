@@ -7,19 +7,19 @@
                 <img src="{{ $featuredPost->cover_image }}" alt="{{ $featuredPost->title }} cover image" class="mb-6">
             @endif
 
-            <p class="text-grey-darker font-medium my-2">
+            <p class="text-md text-grey-dark my-2">
                 {{ $featuredPost->getDate()->format('F j, Y') }}
             </p>
 
-            <h2 class="text-3xl mt-0">
-                <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="text-black font-extrabold">
+            <h2 class="font-serif text-4xl mt-0">
+                <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="text-pink-dark hover:text-pink-darker font-extrabold">
                     {{ $featuredPost->title }}
                 </a>
             </h2>
 
             <p class="mt-0 mb-4">{!! $featuredPost->getExcerpt() !!}</p>
 
-            <a href="{{ $featuredPost->getUrl() }}" title="Read - {{ $featuredPost->title }}" class="uppercase tracking-wide mb-4">
+            <a href="{{ $featuredPost->getUrl() }}" title="Read - {{ $featuredPost->title }}" class="uppercase tracking-wide mb-4 hover:no-underline text-pink-dark hover:text-pink-darker">
                 Read
             </a>
         </div>
@@ -29,7 +29,7 @@
         @endif
     @endforeach
 
-    @include('_components.newsletter-signup')
+    {{--@include('_components.newsletter-signup')--}}
 
     @foreach ($posts->where('featured', false)->take(6)->chunk(2) as $row)
         <div class="flex flex-col md:flex-row md:-mx-6">
