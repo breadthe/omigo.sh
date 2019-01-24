@@ -12,18 +12,22 @@
         <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
     @endif
 
-    <h1 class="leading-none mb-2">{{ $page->title }}</h1>
+    <h1 class="font-serif text-pink-dark leading-none mb-2">{{ $page->title }}</h1>
 
-    <p class="text-grey-darker text-xl md:mt-0">{{ $page->author }}  •  {{ date('F j, Y', $page->date) }}</p>
+    <p class="text-grey-darker text-md md:mt-0">
+        {{ $page->author }}  •  {{ date('F j, Y', $page->date) }}
+    </p>
 
     @if ($page->categories)
-        @foreach ($page->categories as $i => $category)
-            <a
-                href="{{ '/blog/categories/' . $category }}"
-                title="View posts in {{ $category }}"
-                class="inline-block bg-grey-light hover:bg-blue-lighter leading-loose tracking-wide text-grey-darkest uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
-            >{{ $category }}</a>
-        @endforeach
+        {{--<div class="text-center">--}}
+            @foreach ($page->categories as $i => $category)
+                <a
+                        href="{{ '/blog/categories/' . $category }}"
+                        title="View posts in {{ $category }}"
+                        class="inline-block bg-grey-light hover:bg-blue-lighter leading-loose tracking-wide text-grey-darkest uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
+                >{{ $category }}</a>
+            @endforeach
+        {{--</div>--}}
     @endif
 
     <div class="border-b border-blue-lighter mb-10 pb-4" v-pre>

@@ -5,15 +5,15 @@ body {
 a {
     @apply .font-semibold;
     @apply .no-underline;
-    @apply .text-blue-dark;
+    @apply .text-pink;
 
     &:hover {
-        @apply .text-blue-darker;
+        @apply .text-pink-dark;
     }
 }
 
 blockquote {
-    @apply .border-blue-light;
+    @apply .border-pink;
     @apply .border-l-4;
     @apply .font-normal;
     @apply .italic;
@@ -49,10 +49,10 @@ h3,
 h4,
 h5,
 h6 {
+    @apply .font-serif;
     @apply .leading-tight;
     @apply .mb-4;
     @apply .mt-8;
-    @apply .text-black;
 
     &:first-child {
         @apply .mt-0;

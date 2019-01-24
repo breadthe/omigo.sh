@@ -645,15 +645,15 @@ body {
 a {
   font-weight: 600;
   text-decoration: none;
-  color: #0174d4;
+  color: #f66d9b;
 }
 
 a:hover {
-  color: #1a4d8c;
+  color: #eb5286;
 }
 
 blockquote {
-  border-color: #6cb2eb;
+  border-color: #f66d9b;
   border-left-width: 4px;
   font-weight: 400;
   font-style: italic;
@@ -692,10 +692,10 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: Merriweather, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   line-height: 1.25;
   margin-bottom: 1rem;
   margin-top: 2rem;
-  color: #1f2e41;
 }
 
 h1:first-child,
