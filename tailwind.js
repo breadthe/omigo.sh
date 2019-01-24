@@ -209,6 +209,7 @@ fonts: {
     'sans-serif',
   ],
   'serif': [
+    'Merriweather',
     'Constantia',
     'Lucida Bright',
     'Lucidabright',
