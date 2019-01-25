@@ -18,7 +18,7 @@
         {{ $page->author }}  •  {{ date('F j, Y', $page->date) }}
     </p>
 
-    <div class="border-b border-blue-lighter mb-10 pb-4" v-pre>
+    <div class="border-b border-pink text-xl text-grey-darkest mb-10 pb-4" v-pre>
         @yield('content')
 
         @if ($page->categories)
