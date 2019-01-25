@@ -903,6 +903,10 @@ pre code {
   }
 }
 
+.site-logo {
+  font-family: "Alfa Slab One", cursive;
+}
+
 .list-reset {
   list-style: none;
   padding: 0;
