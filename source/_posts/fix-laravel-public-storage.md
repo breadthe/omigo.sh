@@ -19,13 +19,13 @@ In my case, the command seemed to succeed locally but in the browser I couldn't 
 
 Digging deeper, the problem is that the artisan command seems to create an absolute link to the storage folder, which (if you run the command locally) propagates to the synced environment (Homestead) which has an entirely different project structure for your website. As a result, if you check where the created symbolic link on the server (`storage/app/public`) is pointing to, you will see something to the effect of:
 
-```
+```bash
 /Users/LocalUserName/code/MyProjectName
 ```
 
 Which, of course, is not the same as `public/storage`.
 
-```
+```bash
 symlink(): No such file or directory
 ```
 
@@ -33,14 +33,14 @@ The solution proved simple:
 
 First, ssh to the server, navigate to your project folder, then delete the symlink from the public folder:
 
-```
+```bash
 cd public
 unlink storage
 ```
 
 Finally, run the command to create the symlink manually (assuming we are still in public/):
 
-```
+```bash
 ln -s ../storage/app/public storage
 ```
 
