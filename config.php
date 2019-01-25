@@ -3,7 +3,7 @@
 return [
     'baseUrl' => '',
     'production' => false,
-    'siteName' => 'Omigo.sh Blog',
+    'siteName' => 'omigosh Labs',
     'siteDescription' => 'omigosh Labs - Software that doesn\'t go boom!',
     'siteAuthor' => 'The Dev',
 
