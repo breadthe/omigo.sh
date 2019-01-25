@@ -12,26 +12,25 @@
         <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
     @endif
 
-    <h1 class="font-serif text-pink-dark leading-none mb-2">{{ $page->title }}</h1>
+    <h1 class="font-serif font-light text-4xl text-pink-dark leading-none text-center mb-2">{{ $page->title }}</h1>
 
-    <p class="text-grey-darker text-md md:mt-0">
+    <p class="text-grey-darker text-md text-center md:mt-0">
         {{ $page->author }}  •  {{ date('F j, Y', $page->date) }}
     </p>
 
-    @if ($page->categories)
-        {{--<div class="text-center">--}}
+    <div class="border-b border-blue-lighter mb-10 pb-4" v-pre>
+        @yield('content')
+
+        @if ($page->categories)
             @foreach ($page->categories as $i => $category)
                 <a
                         href="{{ '/blog/categories/' . $category }}"
                         title="View posts in {{ $category }}"
-                        class="inline-block bg-grey-light hover:bg-blue-lighter leading-loose tracking-wide text-grey-darkest uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
+                        class="inline-block bg-pink-lighter hover:bg-pink leading-loose tracking-wide text-white hover:text-white uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
                 >{{ $category }}</a>
             @endforeach
-        {{--</div>--}}
-    @endif
+        @endif
 
-    <div class="border-b border-blue-lighter mb-10 pb-4" v-pre>
-        @yield('content')
     </div>
 
     <nav class="flex justify-between text-sm md:text-base">
