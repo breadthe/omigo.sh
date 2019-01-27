@@ -1,10 +1,10 @@
-<footer class="w-full mt-6 text-grey-light text-lg">
+<footer class="mt-6 text-grey-light">
 
-    <div class="container flex flex-wrap justify-between sm:justify-start p-4 sm:p-8">
+    <section class="container max-w-2xl mx-auto flex flex-wrap justify-between sm:justify-start p-2 sm:p-4">
 
         <div class="mt-6 w-1/2 sm:w-1/4">
             <ul class="p-0 text-center sm:text-left">
-                <li><h6 class="mb-2 font-bold text-lg">Company</h6></li>
+                <li><h6 class="mb-2 font-bold text-md">Company</h6></li>
                 <li><a href="/about" class="text-grey-light hover:text-white hover:no-underline">About</a></li>
                 {{--<li><a href="/privacy">Privacy Policy</a></li>--}}
                 {{--<li><a href="/terms">Terms & Conditions</a></li>--}}
@@ -13,15 +13,19 @@
 
         <div class="mt-6 w-1/2 sm:w-1/4">
             <ul class="p-0 text-center sm:text-left">
-                <li><h6 class="mb-2 font-bold text-lg">Support</h6></li>
+                <li><h6 class="mb-2 font-bold text-md">Support</h6></li>
                 {{--<li><a href="/contact">Contact</a></li>--}}
             </ul>
         </div>
 
-    </div>
+    </section>
 
-    <div class="container px-4 sm:px-8 py-4 pb-8 text-center sm:text-left">
-        <img src="/assets/images/omigosh-logo.png" width="25" height="25"> &copy; <span class="text-xl">{{ $page->siteName }}</span> {{ date('Y') }}
-    </div>
+    <section class="container max-w-2xl mx-auto">
+        <div class="flex items-center justify-center sm:justify-start p-2 sm:p-4 text-sm text-center sm:text-left">
+            <img src="/assets/images/omigosh-logo.png" width="20" height="20">
+            &nbsp;&copy;&nbsp;<span>{{ $page->siteName }}</span>
+            &nbsp;{{ date('Y') }}
+        </div>
+    </section>
 
 </footer>
