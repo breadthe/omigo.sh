@@ -2,3 +2,10 @@
 .site-logo {
   font-family: 'Alfa Slab One', cursive;
 }
+
+footer {
+  background-image: $gradient-linear-grey-dark;
+  ul {
+    list-style: none;
+  }
+}

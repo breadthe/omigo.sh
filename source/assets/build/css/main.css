@@ -907,6 +907,14 @@ pre code {
   font-family: "Alfa Slab One", cursive;
 }
 
+footer {
+  background-image: linear-gradient(0deg, #606f7b, #3d4852, #22292f 90%);
+}
+
+footer ul {
+  list-style: none;
+}
+
 .list-reset {
   list-style: none;
   padding: 0;
