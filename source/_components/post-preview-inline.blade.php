@@ -1,6 +1,17 @@
 <div class="flex flex-col mb-4">
     <p class="text-sm text-grey-dark my-2">
         {{ $post->getDate()->format('F j, Y') }}
+
+        @if ($post->categories)
+            &nbsp;|&nbsp;
+            @foreach ($post->categories as $i => $category)
+                <a
+                        href="{{ '/blog/categories/' . $category }}"
+                        title="View posts in {{ $category }}"
+                        class="bg-grey hover:bg-pink-lighter text-white hover:text-white text-xs capitalize rounded px-1"
+                >{{ $category }}</a>
+            @endforeach
+        @endif
     </p>
 
     <h2 class="text-3xl font-serif mt-0">
