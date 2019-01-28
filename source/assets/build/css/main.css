@@ -691,7 +691,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Merriweather, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   line-height: 1.25;
   margin-bottom: 1rem;
   margin-top: 2rem;
@@ -905,6 +904,15 @@ pre code {
 
 .site-logo {
   font-family: "Alfa Slab One", cursive;
+}
+
+.hero {
+  background-image: linear-gradient(180deg, #cc1f1a, #e3342f, #ef5753 90%);
+}
+
+.hero span {
+  font-family: "Alfa Slab One", cursive;
+  letter-spacing: .08em;
 }
 
 footer {
