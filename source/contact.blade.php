@@ -8,15 +8,10 @@
 @endpush
 
 @section('hero')
-    <div class="hero h-auto py-4 sm:py-32 flex items-center">
-        <div class="container w-full mx-auto">
-            <div class="w-full">
-                <div class="text-center mb-2">
-                    <h1 class="text-3xl sm:text-5xl font-light text-white">Contact</h1>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('_partials.hero',[
+        'title' => 'Contact Us',
+        'description' => '',
+    ])
 @endsection
 
 @section('body')

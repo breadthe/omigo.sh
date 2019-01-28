@@ -8,21 +8,10 @@
 @endpush
 
 @section('hero')
-    <div class="hero h-auto py-4 sm:py-32 flex items-center">
-        <div class="container w-full mx-auto">
-            <div class="w-full p-2 mb-8">
-                <div class="text-center mb-2">
-                    <h1 class="text-3xl sm:text-5xl font-light text-white">About Us</h1>
-                </div>
-
-                <div class="text-center">
-                    <h2 class="text-xl sm:text-3xl font-light text-grey-lightest text-shadow">
-                        We have ideas, some become software, some become dust.
-                    </h2>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('_partials.hero',[
+        'title' => 'About Us',
+        'description' => 'We have ideas, some become software, some become dust.',
+    ])
 @endsection
 
 @section('body')
