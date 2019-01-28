@@ -14,12 +14,12 @@
                 class="nav-menu__item hover:text-blue {{ $page->isActive('/about') ? 'active text-blue' : '' }}"
             >About</a>
         </li>
-        <li class="pl-4">
+        {{--<li class="pl-4">
             <a
                 title="{{ $page->siteName }} Contact"
                 href="/contact"
                 class="nav-menu__item hover:text-blue {{ $page->isActive('/contact') ? 'active text-blue' : '' }}"
             >Contact</a>
-        </li>
+        </li>--}}
     </ul>
 </nav>
