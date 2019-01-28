@@ -3,6 +3,14 @@
   font-family: 'Alfa Slab One', cursive;
 }
 
+.hero {
+  background-image: $gradient-linear-red-dark;
+  span {
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 0.08em;
+  }
+}
+
 footer {
   background-image: $gradient-linear-grey-dark;
   ul {
