@@ -36,11 +36,18 @@ pagination:
             @endif
 
             @foreach ($pagination->pages as $pageNumber => $path)
-                <a
-                    href="{{ $path }}"
-                    title="Go to Page {{ $pageNumber }}"
-                    class="bg-grey-lighter hover:bg-grey-light text-blue-darker rounded mr-3 px-5 py-3 {{ $pagination->currentPage == $pageNumber ? 'text-blue-dark' : '' }}"
-                >{{ $pageNumber }}</a>
+                @if($pagination->currentPage == $pageNumber)
+                        <span
+                                title="Page {{ $pageNumber }}"
+                                class="bg-grey-lighter rounded mr-3 px-5 py-3 text-grey-dark"
+                        >{{ $pageNumber }}</span>
+                @else
+                        <a
+                                href="{{ $path }}"
+                                title="Go to Page {{ $pageNumber }}"
+                                class="bg-grey-lighter hover:bg-grey-light rounded mr-3 px-5 py-3 text-pink-dark"
+                        >{{ $pageNumber }}</a>
+                @endif
             @endforeach
 
             @if ($next = $pagination->next)
