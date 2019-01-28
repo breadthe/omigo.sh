@@ -14,7 +14,7 @@
         <div class="mt-6 w-1/2 sm:w-1/4">
             <ul class="p-0 text-center sm:text-left">
                 <li><h6 class="mb-2 font-bold text-md">Support</h6></li>
-                {{--<li><a href="/contact">Contact</a></li>--}}
+                <li><a href="/contact" class="text-grey-light hover:text-white hover:no-underline">Contact</a></li>
             </ul>
         </div>
 
