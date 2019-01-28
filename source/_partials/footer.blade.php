@@ -1,6 +1,6 @@
 <footer class="mt-6 text-grey-light">
 
-    <section class="container max-w-2xl mx-auto flex flex-wrap justify-between sm:justify-start p-2 sm:p-4">
+    <section class="container max-w-xl mx-auto flex flex-wrap justify-between sm:justify-start p-2 sm:p-4">
 
         <div class="mt-6 w-1/2 sm:w-1/4">
             <ul class="p-0 text-center sm:text-left">
@@ -20,7 +20,7 @@
 
     </section>
 
-    <section class="container max-w-2xl mx-auto">
+    <section class="container max-w-xl mx-auto">
         <div class="flex items-center justify-center sm:justify-start p-2 sm:p-4 text-sm text-center sm:text-left">
             <img src="/assets/images/omigosh-logo.png" width="20" height="20">
             &nbsp;&copy;&nbsp;<span>{{ $page->siteName }}</span>
