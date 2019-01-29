@@ -8,25 +8,29 @@
 
         <div class="mt-1 flex flex-wrap items-start justify-center">
             <div class="w-5/6 sm:w-1/4 h- p-2 m-4 text-lg text-center">
-                <img src="/assets/images/sikrt-logo.png" width="30" height="30">
-                <span class="font-bold">Sikrt</span>
-                &bullet;
-                <a href="https://sikrt.com">sikrt.com</a>
-                <p class="clearfix">
+                <div class="flex items-center justify-center">
+                    <img src="/assets/images/sikrt-logo.png" width="30" height="30">&nbsp;
+                    <span class="font-bold">Sikrt</span>&nbsp;
+                    &bullet;&nbsp;
+                    <a href="https://sikrt.com">sikrt.com</a>
+                </div>
+                <p class="">
                     Share sensitive information securely via encrypted, short duration, self-destructing URLs.
                 </p>
             </div>
             <div class="w-5/6 sm:w-1/4 h- p-2 m-4 text-lg text-center text-grey-darkest">
-                <span class="font-bold">AllMySh*</span>
-                &bullet;
-                <a href="https://allmy.sh">allmy.sh</a>
-                <p class="clearfix">
+                <div class="flex items-center justify-center">
+                    <span class="font-bold">AllMySh*</span>&nbsp;
+                    &bullet;&nbsp;
+                    <a href="https://allmy.sh">allmy.sh</a>
+                </div>
+                <p class="">
                     Catalog, track, and document your personal possessions.
                 </p>
             </div>
             <div class="w-5/6 sm:w-1/4 h- p-2 m-4 text-lg text-center text-grey-darkest">
                 <span class="font-bold">And More...</span>
-                <p class="clearfix">
+                <p class="">
                     Our motto: "There's no shortage of ideas".
                 </p>
             </div>
