@@ -9,9 +9,10 @@ featured: true
 published: true
 ---
 
-![](https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=575755492ef51726cb066f422908b9d7&auto=format&fit=crop&w=1350&q=80)
+![](https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=575755492ef51726cb066f422908b9d7&auto=format&fit=crop&w=1350&q=80)  
+<small class="block text-center text-xs">Photo by [Chris Ried](https://unsplash.com/@cdr6934) on [Unsplash](https://unsplash.com)</small>
 
-I have long wanted to share thoughts about development-related things but the hardest thing is to get started. Here I am though.
+I've long wanted to share thoughts about development-related things but the hardest thing is to get started. Here I am though.
 
 I've been a software developer (in some form or another) for most of my life, and if there's one certainty in this career it's the constant need for self-improvement.
 
