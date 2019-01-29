@@ -12,7 +12,11 @@ return [
         'posts' => [
             'author' => 'The Dev', // Default author, if not provided in a post
             'sort' => '-date',
-            'path' => 'blog/{filename}',
+            'path' => function ($page)
+            {
+                $slug = preg_replace('/[0-9]{4}-[0-9]{2}-[0-9]{2}-/i', '', $page->getFilename());
+                return "blog/$slug";
+            },
         ],
         'categories' => [
             'path' => '/blog/categories/{filename}',
