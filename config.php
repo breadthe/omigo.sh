@@ -52,4 +52,11 @@ return [
     'isActive' => function ($page, $path) {
         return ends_with(trimPath($page->getPath()), trimPath($path));
     },
+    /**
+     * Determines if a page belongs to a path
+     * Example: /blog belongs to /blog; so does /blog/my-first-post/
+     */
+    'belongsTo' => function ($page, $path) {
+        return starts_with(trimPath($page->getPath()), trimPath($path));
+    },
 ];
