@@ -4,21 +4,21 @@
             <a
                 title="{{ $page->siteName }} Blog"
                 href="/blog"
-                class="nav-menu__item hover:text-blue {{ $page->isActive('/blog') ? 'active text-blue' : '' }}"
+                class="nav-menu__item hover:text-pink-dark {{ $page->isActive('/blog') ? 'active text-pink-dark' : '' }}"
             >Blog</a>
         </li>
         <li class="pl-4">
             <a
                 title="{{ $page->siteName }} About"
                 href="/about"
-                class="nav-menu__item hover:text-blue {{ $page->isActive('/about') ? 'active text-blue' : '' }}"
+                class="nav-menu__item hover:text-pink-dark {{ $page->isActive('/about') ? 'active text-pink-dark' : '' }}"
             >About</a>
         </li>
         <li class="pl-4">
             <a
                 title="{{ $page->siteName }} Contact"
                 href="/contact"
-                class="nav-menu__item hover:text-blue {{ $page->isActive('/contact') ? 'active text-blue' : '' }}"
+                class="nav-menu__item hover:text-pink-dark {{ $page->isActive('/contact') ? 'active text-pink-dark' : '' }}"
             >Contact</a>
         </li>
     </ul>
