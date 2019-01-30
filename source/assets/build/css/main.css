@@ -904,13 +904,13 @@ pre code {
   font-family: "Alfa Slab One", cursive;
 }
 
-.hero {
-  background-image: linear-gradient(180deg, #cc1f1a, #e3342f, #ef5753 90%);
-}
-
 .hero span {
   font-family: "Alfa Slab One", cursive;
   letter-spacing: .08em;
+}
+
+.hero.hero-red {
+  background-image: linear-gradient(180deg, #cc1f1a, #e3342f, #ef5753 90%);
 }
 
 footer {

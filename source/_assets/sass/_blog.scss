@@ -4,11 +4,13 @@
 }
 
 .hero {
-  background-image: $gradient-linear-red-dark;
   span {
     font-family: 'Alfa Slab One', cursive;
     letter-spacing: 0.08em;
   }
+}
+.hero.hero-red {
+  background-image: $gradient-linear-red-dark;
 }
 
 footer {

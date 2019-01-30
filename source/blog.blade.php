@@ -12,9 +12,14 @@ pagination:
     <meta property="og:description" content="The list of blog posts for {{ $page->siteName }}" />
 @endpush
 
-@section('body')
-    <h1>Blog</h1>
+@section('hero')
+    @include('_partials.hero',[
+        'title' => 'Blog',
+        'description' => 'Pontificating on all things Laravel // Vue.js // TailwindCSS // and more...',
+    ])
+@endsection
 
+@section('body')
     <hr class="border-b my-6">
 
     @foreach ($pagination->items as $post)
