@@ -4,7 +4,7 @@
             <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
                 {{--<img class="h-8 md:h-10 mr-3" src="/assets/img/logo.svg" alt="{{ $page->siteName }} logo" />--}}
 
-                <h1 class="site-logo no-underline text-lg md:text-2xl my-0 {{ $page->belongsTo('/blog') ? 'text-grey-dark' : 'text-white' }}">
+                <h1 class="site-logo no-underline text-lg md:text-xl tracking-wide my-0 {{ $page->belongsTo('/blog') ? 'text-grey-dark' : 'text-white' }}">
                     {{ $page->siteName }}
                 </h1>
             </a>
