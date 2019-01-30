@@ -796,7 +796,6 @@ pre code {
 }
 
 .nav-menu {
-  background-color: #ecf0f3;
   padding-bottom: .5rem;
   padding-top: 1.5rem;
   padding-left: .5rem;
@@ -812,7 +811,6 @@ pre code {
   text-decoration: none;
   margin-bottom: 1rem;
   margin-top: 0;
-  color: #606f7b;
   font-size: .925rem;
 }
 
