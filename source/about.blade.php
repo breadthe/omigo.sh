@@ -31,6 +31,10 @@
             As long as I can remember, I enjoyed building things. For lack of talent in the arts, I gravitated towards one of the few mediums that allowed me to express my creativity: code.
         </p>
 
+        <p class="mt-4 text-xl font-light">
+            This website and the accompanying blog are a small subset of my code experiments and continuous learning.
+        </p>
+
         {{--<h3 class="mt-6">Our Mission</h3>
 
         <p class="mt-4 text-xl font-light">
