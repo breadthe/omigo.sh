@@ -52,11 +52,34 @@ return [
     'isActive' => function ($page, $path) {
         return ends_with(trimPath($page->getPath()), trimPath($path));
     },
+
     /**
      * Determines if a page belongs to a path
      * Example: /blog belongs to /blog; so does /blog/my-first-post/
      */
     'belongsTo' => function ($page, $path) {
         return starts_with(trimPath($page->getPath()), trimPath($path));
+    },
+
+    /**
+     * Builds the image attribution string for a post hero image based on additional post metadata
+     * Example: Photo by Chris Ried (https://unsplash.com/@cdr6934) on Unsplash (https://unsplash.com)
+     */
+    'imageAttribution' => function ($page) {
+        $str = '';
+
+        if ($image_author = $page->image_author) {
+            $str .= "Photo by $image_author";
+        }
+
+        if ($image_author_url = $page->image_author_url) {
+            $str .=  " ($image_author_url)";
+        }
+
+        if ($page->image_unsplash) {
+            $str .= ' on Unsplash (https://unsplash.com)';
+        }
+
+        return $str;
     },
 ];
