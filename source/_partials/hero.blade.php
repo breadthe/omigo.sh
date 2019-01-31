@@ -1,4 +1,4 @@
-<section class="hero h-auto py-8 flex items-center flex-col {{ $page->belongsTo('/blog') ? 'sm:py-16' : 'hero-red sm:py-32' }}">
+<section class="hero h-auto flex items-center flex-col {{ $page->belongsTo('/blog') ? 'pt-8 sm:pt-16' : 'hero-red py-8 sm:py-16' }}">
         <div class="text-center mb-2">
             <h1 class="text-3xl sm:text-5xl font-light uppercase {{ $page->belongsTo('/blog') ? 'text-grey-darkest' : 'text-white' }}">
                 {{ $title }}
