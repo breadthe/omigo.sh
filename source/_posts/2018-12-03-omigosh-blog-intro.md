@@ -4,7 +4,7 @@ section: content
 title: Omigo.sh Blog Intro
 date: 2018-12-03
 description: The who, what, why of Omigo.sh
-categories: [General]
+categories: [general]
 featured: true
 published: true
 ---
