@@ -1,4 +1,4 @@
-<section class="hero h-auto py-4 sm:py-32 flex items-center">
+<section class="hero hero-red h-auto py-4 sm:py-32 flex items-center">
 
     <div class="container mx-auto max-w-xl">
         <div class="w-full p-2 mb-8">
