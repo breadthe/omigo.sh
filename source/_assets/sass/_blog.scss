@@ -19,3 +19,27 @@ footer {
     list-style: none;
   }
 }
+
+form {
+  @apply mx-auto;
+  @apply max-w-md;
+  @apply bg-grey-light;
+  @apply p-4;
+  @apply rounded;
+  @apply shadow-md;
+
+  input,
+  textarea {
+    @apply w-full;
+    @apply shadow-inner;
+    @apply rounded;
+    @apply p-2;
+  }
+
+  button[type='submit'] {
+    @apply p-2;
+    @apply bg-grey-dark;
+    @apply text-white;
+    @apply rounded;
+  }
+}
