@@ -7,20 +7,27 @@
     <meta property="og:description" content="{{ $page->description }}" />
 @endpush
 
-@section('body')
-    <h1>{{ $page->title }}</h1>
+@section('hero')
+    @include('_partials.hero',[
+        'title' => $page->title,
+        'description' => $page->description,
+    ])
+@endsection
 
-    <div class="text-2xl border-b border-blue-lighter mb-6 pb-10">
-        @yield('content')
+@section('body')
+    <div class="text-2xl border-b border-pink mb-6 pb-10">
+        <a href="/blog" title="Back to Blog index">
+            &LeftArrow; Back to Blog
+        </a>
     </div>
 
     @foreach ($page->posts($posts) as $post)
-        @include('_components.post-preview-inline')
+            @include('_components.post-preview-inline')
 
         @if (! $loop->last)
             <hr class="w-full border-b mt-2 mb-6">
         @endif
     @endforeach
 
-    @include('_components.newsletter-signup')
+{{--    @include('_components.newsletter-signup')--}}
 @stop
