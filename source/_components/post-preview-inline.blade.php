@@ -22,7 +22,18 @@
         >{{ $post->title }}</a>
     </h2>
 
-    <p class="mb-4 mt-0">{!! $post->getExcerpt(200) !!}</p>
+    <p class="mb-4 mt-0 flex justify-start">
+        @if($image = $post->image_thumb)
+            <img
+                src="{{ $image }}"
+                alt="{{ $post->imageAttribution() }}"
+                title="{{ $post->imageAttribution() }}"
+                class="mr-4 rounded"
+            >
+        @endif
+
+        {!! $post->getExcerpt(200) !!}
+    </p>
 
     <a
         href="{{ $post->getUrl() }}"
