@@ -14,7 +14,7 @@ image_author_url: https://unsplash.com/@cdr6934
 image_unsplash: true
 ---
 
-I've long wanted to share thoughts about development-related things but the hardest thing is to get started. Here I am though.
+I've wanted to share my thoughts about development-related things for a very long time but somehow never got around to it. Excuses are plenty but what's important is that I finally found myself in a good place to get this started. So here I am. Welcome to the Omigo.sh blog.
 
 I've been a software developer (in some form or another) for most of my life, and if there's one certainty in this career it's the constant need for self-improvement.
 
@@ -22,6 +22,6 @@ I started Omigo.sh as a central platform from which I can showcase the personal 
 
 My intent is to use the Omigo.sh blog for recording techniques and solutions to problems that I have discovered while working with my favorite platforms, including (but not limited to) PHP, Laravel, Vue.js, TailwindCSS, Mac, PC, etc.
 
-As much as possible, I would like to avoid duplicating content that lies a short Google search away, because after all, whenever I find myself in deep waters without an obvious solution, that's one of the first things I try. However, it's entirely possible that things will be repeated here at some point, but I can assure you it wasn't intentional.
+As much as possible, I would like to avoid duplicating content that lies a short Google search away, because after all, whenever I find myself in deep waters without an obvious solution, it's one of the first things I try. However, it's entirely possible that things will be repeated here at some point, but I can assure you it wasn't intentional.
 
 Having said all that, and with reasonable certainty that probably no one will read this post anyway, I will now venture wherever the keyboard will lead me.
