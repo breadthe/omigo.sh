@@ -9,9 +9,9 @@ featured: false
 published: true
 ---
 
-I will admit that at the time I did not have a lot of experience with Laravel's [filesystem](https://laravel.com/docs/5.7/filesystem).
+When I ran into this particular problem with Laravel's [filesystem](https://laravel.com/docs/5.7/filesystem), I had less experience with it than I do today (relatively speaking).
 
-For my Laravel development environment I use Homestead on both Mac and Windows.
+To give a little background, for my Laravel development environment I use Homestead on Mac and Windows both.
 
 In one project I wanted to upload some images to the public folder. The Laravel documentation says that you should run the `php artisan storage:link` command in order to symlink the public folder (it maps `storage/app/public` to `public/storage`). By default, uploaded files are private.
 
