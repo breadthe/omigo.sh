@@ -22,18 +22,24 @@
         >{{ $post->title }}</a>
     </h2>
 
-    <p class="mb-4 mt-0 flex justify-start">
+    <section class="flex flex-col sm:flex-row justify-start mb-4 mt-0">
         @if($image = $post->image_thumb)
-            <img
-                src="{{ $image }}"
-                alt="{{ $post->imageAttribution() }}"
-                title="{{ $post->imageAttribution() }}"
-                class="mr-4 rounded"
+            <div
+                    class="overflow-hidden sm:mr-4 mb-4"
             >
+                <img
+                        src="{{ $image }}"
+                        alt="{{ $post->imageAttribution() }}"
+                        title="{{ $post->imageAttribution() }}"
+                        class="w-full rounded"
+                >
+            </div>
         @endif
 
-        {!! $post->getExcerpt(200) !!}
-    </p>
+        <div class="flex-1">
+            {!! $post->getExcerpt(200) !!}
+        </div>
+    </section>
 
     <a
         href="{{ $post->getUrl() }}"
