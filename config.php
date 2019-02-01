@@ -65,19 +65,32 @@ return [
      * Builds the image attribution string for a post hero image based on additional post metadata
      * Example: Photo by Chris Ried (https://unsplash.com/@cdr6934) on Unsplash (https://unsplash.com)
      */
-    'imageAttribution' => function ($page) {
+    'imageAttribution' => function ($page, $html = false) {
         $str = '';
 
-        if ($image_author = $page->image_author) {
-            $str .= "Photo by $image_author";
-        }
+        $image_author = $page->image_author;
+        $image_author_url = $page->image_author_url;
 
-        if ($image_author_url = $page->image_author_url) {
-            $str .=  " ($image_author_url)";
+        if ($image_author) {
+            $str .=  "Photo by ";
+
+            if ($html) {
+                if ($image_author_url) {
+                    $str .= '<a href="' . $image_author_url . '" title="' . $image_author . '">' . $image_author . '</a>';
+                } else {
+                    $str .=  "$image_author ($image_author_url)";
+                }
+            } else {
+                $str .= "$image_author";
+            }
         }
 
         if ($page->image_unsplash) {
-            $str .= ' on Unsplash (https://unsplash.com)';
+            if ($html) {
+                $str .= ' on <a href="https://unsplash.com" title="Unsplashs">Unsplash</a>';
+            } else {
+                $str .= ' on Unsplash (https://unsplash.com)';
+            }
         }
 
         return $str;

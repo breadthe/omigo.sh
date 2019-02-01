@@ -3,10 +3,7 @@
         <img src="{{ $image }}" alt="{{ $page->imageAttribution() }}" title="{{ $page->imageAttribution() }}">
 
         <small class="block text-center text-xs">
-            Photo by <a href="{{ $page->image_author_url }}">{{ $page->image_author }}</a>
-            @if($page->image_unsplash)
-                on <a href="https://unsplash.com">Unsplash</a>
-            @endif
+            {!! $page->imageAttribution(true) !!}
         </small>
     @endif
 </section>
