@@ -27,12 +27,18 @@
             <div
                     class="overflow-hidden sm:mr-4 mb-4"
             >
-                <img
-                        src="{{ $image }}"
-                        alt="{{ $post->imageAttribution() }}"
-                        title="{{ $post->imageAttribution() }}"
-                        class="w-full rounded"
+                <a
+                        href="{{ $post->getUrl() }}"
+                        title="Read more - {{ $post->title }}"
+                        class="text-pink-dark hover:text-pink-darker font-extrabold"
                 >
+                    <img
+                            src="{{ $image }}"
+                            alt="{{ $post->imageAttribution() }}"
+                            title="{{ $post->imageAttribution() }}"
+                            class="w-full rounded"
+                    >
+                </a>
             </div>
         @endif
 
