@@ -15,7 +15,7 @@
 @endsection
 
 @section('body')
-    <div class="container w-5/6 mx-auto">
+    <section class="container max-w-xl">
 
         <h3 class="mt-6">Who Are We?</h3>
 
@@ -44,5 +44,5 @@
         <p class="mt-4 text-xl font-light">
             In time.
         </p>--}}
-    </div>
+    </section>
 @endsection
