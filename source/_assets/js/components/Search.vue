@@ -62,7 +62,7 @@
             @click.prevent="showInput"
         >
             <!--
-            Formerly <img src="/assets/img/magnifying-glass.svg" alt="search icon" class="h-4 w-4 max-w-none">
+            Formerly <img src="/assets/images/magnifying-glass.svg" alt="search icon" class="h-4 w-4 max-w-none">
             -->
             <svg
                 class="h-4 w-4 max-w-none"
@@ -146,7 +146,7 @@ export default {
 
 <style>
 input[name='search'] {
-    background-image: url('/assets/img/magnifying-glass.svg');
+    background-image: url('/assets/images/magnifying-glass.svg');
     background-position: 0.8em;
     background-repeat: no-repeat;
     border-radius: 4px;
