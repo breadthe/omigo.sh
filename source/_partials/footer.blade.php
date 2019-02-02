@@ -6,6 +6,12 @@
             <ul class="p-0 text-center sm:text-left">
                 <li><h6 class="mb-2 font-bold text-md">Company</h6></li>
                 <li><a href="/about" class="text-grey-light hover:text-white hover:no-underline">About</a></li>
+                <li>
+                    <a href="/blog/feed.atom" class="text-grey-light hover:text-white hover:no-underline">
+                        <img src="/assets/images/feed-icon-14x14.png" width="14" height="14" alt="Subscribe to Atom Feed" title="Subscribe to Atom Feed">
+                        Subscribe to Blog
+                    </a>
+                </li>
                 {{--<li><a href="/privacy">Privacy Policy</a></li>--}}
                 {{--<li><a href="/terms">Terms & Conditions</a></li>--}}
             </ul>

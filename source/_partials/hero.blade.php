@@ -1,5 +1,10 @@
-<section class="hero h-auto flex items-center flex-col {{ $page->belongsTo('/blog') ? 'pt-8 sm:pt-16' : 'hero-red py-8 sm:py-16' }}">
-        <div class="text-center mb-2">
+<section class="hero h-auto flex items-center flex-col {{ $page->belongsTo('/blog') ? 'pt-0 sm:pt-8' : 'hero-red py-6 sm:py-12' }}">
+        <div class="text-center mb-2 flex items-center">
+            @if ($page->belongsTo('/blog'))
+                <a href="/blog/feed.atom" class="mt-5 mr-2">
+                    <img src="/assets/images/feed-icon-28x28.png" width="28" height="28" alt="Subscribe to the Atom Feed" title="Subscribe to the Atom Feed">
+                </a>
+            @endif
             <h1 class="text-3xl sm:text-5xl font-light uppercase {{ $page->belongsTo('/blog') ? 'text-grey-darkest' : 'text-white' }}">
                 {{ $title }}
             </h1>
