@@ -8,8 +8,8 @@
                 <li><a href="/about" class="text-grey-light hover:text-white hover:no-underline">About</a></li>
                 <li>
                     <a href="/blog/feed.atom" class="text-grey-light hover:text-white hover:no-underline">
-                        <img src="/assets/images/feed-icon-14x14.png" width="14" height="14" alt="Subscribe to Atom Feed" title="Subscribe to Atom Feed">
-                        Subscribe to Blog
+                        <img src="/assets/images/feed-icon-14x14.png" width="14" height="14" alt="Subscribe to the Blog Atom Feed" title="Subscribe to the Blog Atom Feed">
+                        Blog
                     </a>
                 </li>
                 {{--<li><a href="/privacy">Privacy Policy</a></li>--}}
