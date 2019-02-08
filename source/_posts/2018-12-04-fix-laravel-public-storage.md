@@ -6,7 +6,6 @@ date: 2018-12-04
 description: How to fix public storage visibility in Homestead
 categories: [laravel]
 featured: false
-published: true
 ---
 
 When I ran into this particular problem with Laravel's [filesystem](https://laravel.com/docs/5.7/filesystem), I had less experience with it than I do today (relatively speaking).

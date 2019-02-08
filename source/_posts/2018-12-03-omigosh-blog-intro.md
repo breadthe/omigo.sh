@@ -5,8 +5,7 @@ title: Omigo.sh Blog Intro
 date: 2018-12-03
 description: The who, what, why of Omigo.sh
 categories: [general]
-featured: true
-published: true
+featured: false
 image: https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=575755492ef51726cb066f422908b9d7&auto=format&fit=crop&w=1350&q=80
 image_thumb: https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=575755492ef51726cb066f422908b9d7&fit=max&w=200&q=75
 image_author: Chris Ried
