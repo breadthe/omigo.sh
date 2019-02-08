@@ -25,7 +25,7 @@
     <section class="flex flex-col sm:flex-row justify-start mb-4 mt-0">
         @if($image = $post->image_thumb)
             <div
-                    class="overflow-hidden sm:mr-4 mb-4"
+                    class="overflow-hidden sm:mr-4 mb-4 sm:w-1/4 text-center"
             >
                 <a
                         href="{{ $post->getUrl() }}"
@@ -36,7 +36,7 @@
                             src="{{ $image }}"
                             alt="{{ $post->imageAttribution() }}"
                             title="{{ $post->imageAttribution() }}"
-                            class="w-full rounded"
+                            class="rounded shadow-md"
                     >
                 </a>
             </div>
