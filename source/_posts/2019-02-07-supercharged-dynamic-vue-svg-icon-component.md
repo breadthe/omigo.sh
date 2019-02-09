@@ -4,7 +4,7 @@ section: content
 title: Supercharged Dynamic Vue SVG Icon Component
 date: 2019-02-07
 description: Building a versatile, reusable Vue component wrapper for a SVG icon library.
-categories: [vue, svg]
+categories: [vue, svg, tailwindcss]
 featured: false
 image: /assets/img/2019-02-07-supercharged-dynamic-vue-svg-icon-component-1.png
 image_thumb: /assets/img/2019-02-07-supercharged-dynamic-vue-svg-icon-component-1.png
@@ -12,6 +12,8 @@ image_author:
 image_author_url:
 image_unsplash:
 ---
+
+> **UPDATE 8 Feb 2019** _In my excitement I failed to realize that TailwindCSS makes it even easier to accomplish what I've outlined in this article, with fewer lines of code and a simplified API. Check out my [follow-up article](/blog/simplified-dynamic-svg-icon-component/) for the details._
 
 As a developer with designer aspirations I've found it a little cumbersome to use SVG icons in my projects. Unfortunately SVG is not as straightforward to use as a popular font icon library such as [FontAwesome](https://fontawesome.com/). There are all kinds of considerations to keep in mind, amongst them fill color and size.
 
