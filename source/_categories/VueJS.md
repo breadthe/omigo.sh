@@ -1,6 +1,6 @@
 ---
 extends: _layouts.category
-title: Vue
+title: VueJS
 description: Vue.js tips, tricks, gotchas, and code snippets.
 ---
 
