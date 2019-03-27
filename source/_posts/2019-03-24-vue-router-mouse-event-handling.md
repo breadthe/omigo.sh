@@ -3,7 +3,7 @@ extends: _layouts.post
 section: content
 title: How to Handle Vue Router Link Mouse Events Properly
 date: 2019-03-24
-description: Had a WTF moment when I deployed a new Vue project to Netlify, only to be confronted with this message when I refreshed any route that wasn't root. It worked just fine locally! Here's how to fix this.
+description: Simple mouse events on a vue-router generated link seemingly don't work. What gives?
 categories: [VueJS]
 featured: false
 image: /assets/img/2019-03-24-vue-router-mouse-event-handling.png
