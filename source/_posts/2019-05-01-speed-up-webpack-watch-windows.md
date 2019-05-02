@@ -47,6 +47,6 @@ mix.webpackConfig({
 
 Keep in mind that the Webpack configuration above is taken from a Laravel 5.8 project, meaning it's wrapped inside [Laravel Mix](https://laravel-mix.com/) but in a regular Webpack project you can use the same method. 
 
-You'll need to restart `yarn watch` after adding this setting, but you get a 2x - 3x speed increase 🚀.
+You'll need to restart `yarn watch` after adding this setting, but the watch build time drops down to 7-10 seconds, a 2x - 3x speed increase 🚀!
 
 Happy Webpacking!
