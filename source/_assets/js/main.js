@@ -5,6 +5,7 @@ window.Vue = require('vue');
 import Search from './components/Search.vue';
 // import VIcon from './components/icons/VIcon';
 import hljs from 'highlight.js/lib/highlight';
+import 'highlight.js/styles/monokai-sublime.css';
 
 // Syntax highlighting
 hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'));
