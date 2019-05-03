@@ -47,6 +47,36 @@ mix.webpackConfig({
 
 Keep in mind that the Webpack configuration above is taken from a Laravel 5.8 project, meaning it's wrapped inside [Laravel Mix](https://laravel-mix.com/) but in a regular Webpack project you can use the same method. 
 
-You'll need to restart `yarn watch` after adding this setting, but the watch build time drops down to 7-10 seconds, a 2x - 3x speed increase 🚀!
+You'll need to restart `yarn watch` after adding this setting, but the watch build time drops down to 1.5-10 seconds, a 2x - 15x speed increase 🚀!
+
+## Digging deeper
+
+What I failed to mention (and it's an important one!) is that I don't use this technique in production, but merely in my local dev environment. In fact Webpack mentions just that in the `devtool` [documentation](https://webpack.js.org/configuration/devtool/).
+
+If you are curious if there's any different in the **production** bundle size without this option and after applying it, yes there is. Using `devtool: 'eval'` produces a larger bundle. Here's a comparison (the CSS bundles are omitted because their size is not affected). The biggest difference is in the vendor bundle
+
+**With** `devtool: 'eval'`:
+
+```
+DONE Compiled successfully in 32631ms 10:12:56 AM
+
+      Asset           Size       Chunks               Chunk Names
+/js/app.js           656 kB        1         [emitted] [big] /js/app 
+/js/vendor.js       1.25 MB        3         [emitted] [big] /js/vendor
+
+Done in 37.33s.
+```
+
+**Without** `devtool: 'eval'`:
+
+```
+DONE Compiled successfully in 78692ms 10:23:16 AM
+
+      Asset          Size        Chunks                Chunk Names
+/js/app.js          407 kB         1          [emitted] [big] /js/app 
+/js/vendor.js       345 kB         3          [emitted] [big] /js/vendor
+
+Done in 83.60s. 
+```
 
 Happy Webpacking!
