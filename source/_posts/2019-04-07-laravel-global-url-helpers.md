@@ -6,10 +6,10 @@ date: 2019-04-07
 description: Simple helper functions that allow quick removal or addition of URL query parameters.
 categories: [Laravel]
 featured: false
-image: https://source.unsplash.com/VVgVlH1D10U/?fit=max&w=1350
-image_thumb: https://source.unsplash.com/VVgVlH1D10U/?fit=max&w=200&q=75
-image_author: Slava Bowman
-image_author_url: https://unsplash.com/photos/VVgVlH1D10U
+image: https://source.unsplash.com/nXt5HtLmlgE/?fit=max&w=1350
+image_thumb: https://source.unsplash.com/nXt5HtLmlgE/?fit=max&w=200&q=75
+image_author: Kyle Glenn
+image_author_url: https://unsplash.com/@kylejglenn
 image_unsplash: true
 ---
 
