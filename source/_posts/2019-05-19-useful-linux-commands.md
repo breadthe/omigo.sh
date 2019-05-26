@@ -46,6 +46,8 @@ ssh-keygen -l
 ## Mac
 
 ```bash
+pbcopy < ~/.ssh/id_rsa.pub
+# or
 cat ~/.ssh/id_rsa.pub | pbcopy
 ```
 
