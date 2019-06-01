@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 section: content
-title: How to install HTTPie in Windows 10
+title: How to Install HTTPie in Windows 10
 date: 2019-05-26
 description: HTTPie is a pretty cool tool but installing it in Windows is not as straightforward as on the Mac.
 categories: [DevTools]
