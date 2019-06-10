@@ -194,7 +194,7 @@ screens: {
 
 fonts: {
   'sans': [
-    'Nunito Sans',
+    'Roboto',
     'system-ui',
     'BlinkMacSystemFont',
     '-apple-system',

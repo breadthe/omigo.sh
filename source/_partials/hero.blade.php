@@ -11,7 +11,7 @@
         </div>
 
         <div class="text-center px-6 sm:px-0 max-w-md">
-            <h2 class="text-xl sm:text-3xl font-light text-shadow {{ $page->belongsTo('/blog') ? 'text-grey-dark' : 'text-grey-lightest' }}">
+            <h2 class="text-2xl sm:text-3xl leading-normal font-light text-shadow {{ $page->belongsTo('/blog') ? 'text-grey-dark' : 'text-grey-lightest' }}">
                 {{ $description }}
             </h2>
         </div>

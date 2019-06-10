@@ -42,7 +42,7 @@
             </div>
         @endif
 
-        <div class="flex-1">
+        <div class="flex-1 text-xl font-light">
             {!! $post->getExcerpt(200) !!}
         </div>
     </section>

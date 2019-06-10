@@ -11,7 +11,7 @@
             </div>
 
             <div class="text-center">
-                <h2 class="text-xl sm:text-3xl font-light text-grey-lightest">
+                <h2 class="text-xl sm:text-3xl font-light text-grey-lightest leading-loose">
                     We take ideas and turn them into web software products and SaaS apps. Sometimes we re-invent the wheel but that's OK, because the wheel can always get better.
                 </h2>
             </div>
@@ -23,7 +23,7 @@
             </div>
 
             <div class="text-center">
-                <h2 class="text-xl sm:text-3xl font-light text-grey-lightest">
+                <h2 class="text-xl sm:text-3xl font-light text-grey-lightest leading-loose">
                     We craft custom solutions using the Laravel PHP framework, VueJS, and TailwindCSS.
                 </h2>
             </div>
