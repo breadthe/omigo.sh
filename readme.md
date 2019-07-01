@@ -1,8 +1,6 @@
 # Omigo.sh
 
-This is a starter template for creating a beautiful, customizable blog in Jigsaw with minimal effort. You’ll only have to change a few settings and you’re ready to go.
-
-[View a preview of the blog template.](http://jigsaw-blog-staging.tighten.co/)
+Feel free to clone and modify my site and blog template. If you find it useful, I would appreciate dropping me a note at [https://omigo.sh/contact/](https://omigo.sh/contact/).
 
 ## Installation
 
