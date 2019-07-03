@@ -107,7 +107,7 @@ uname -i
 x86_64
 ```
 
-# df
+# df -h
 
 Shows file system disk space (`-h` for human-readable file sizes).
 
@@ -132,6 +132,115 @@ tmpfs           996M     0  996M   0% /sys/fs/cgroup
 /dev/loop6       90M   90M     0 100% /snap/core/6818
 /dev/loop1       18M   18M     0 100% /snap/amazon-ssm-agent/1335
 tmpfs           200M     0  200M   0% /run/user/1001
+```
+
+# `du storage/ -cah -d 1 -t 20M | sort -hr`
+
+Disk usage. Useful to check how much space a directory, its subdirectories, and files, occupy. These are just some of the most useful flags and options that I use.
+
+- `storage/` check inside the specified directory (by default will check the current root)
+- `-c` shows a summary of the total
+- `-a` shows files in addition to directories
+- `-h` human readable format
+- `-d 1` looks 1 directory deep
+- `-t 50M` shows only files/directories over the specified size
+- `| sort -hr` sort by size (`-h` sorts by human-readable sizes) (`-r` sorts in descending order of size)
+
+**Examples**
+
+Show the size of all 1st level subdirectories.
+
+```bash
+du -h -d 1
+181M    ./vendor
+972K    ./resources
+112K    ./config
+113M    ./storage
+116K    ./tests
+728K    ./app
+148K    ./database
+36K     ./routes
+26M     ./.git
+40K     ./bootstrap
+9.0M    ./public
+331M    .
+```
+
+Show the size of all 1st level subdirectories and files.
+
+```bash
+du -ah -d 1
+181M    ./vendor
+368K    ./composer.lock
+4.0K    ./.env
+972K    ./resources
+4.0K    ./.gitignore
+112K    ./config
+113M    ./storage
+324K    ./yarn.lock
+4.0K    ./server.php
+20K     ./README.md
+4.0K    ./composer.json
+4.0K    ./artisan
+116K    ./tests
+728K    ./app
+4.0K    ./.gitattributes
+148K    ./database
+4.0K    ./webpack.mix.js
+4.0K    ./phpunit.xml
+4.0K    ./.env.example
+36K     ./routes
+32K     ./tailwind.js
+26M     ./.git
+4.0K    ./.editorconfig
+40K     ./bootstrap
+9.0M    ./public
+4.0K    ./phpunit-printer.yml
+4.0K    ./package.json
+331M    .
+```
+
+Show the size of all 1st level subdirectories inside the `storage/` folder.
+
+```bash
+du storage/ -cah -d 1
+4.0K    storage/oauth-public.key
+3.2M    storage/framework
+110M    storage/app
+260K    storage/logs
+4.0K    storage/oauth-private.key
+113M    storage/
+113M    total
+```
+
+Show the size of all 1st level subdirectories, with a summary of the total, sorted by size.
+
+```bash
+du -ch -d 1 | sort -h
+36K     ./routes
+40K     ./bootstrap
+112K    ./config
+116K    ./tests
+148K    ./database
+728K    ./app
+972K    ./resources
+9.0M    ./public
+26M     ./.git
+113M    ./storage
+181M    ./vendor
+331M    .
+331M    total
+```
+
+Show the size of all 1st level subdirectories that are larger than 20M, with a summary of the total, sorted by descending size.
+
+```bash
+du -ch -d 1 -t 20M | sort -hr
+331M    total
+331M    .
+181M    ./vendor
+113M    ./storage
+26M     ./.git
 ```
 
 # free
