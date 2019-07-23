@@ -282,6 +282,10 @@ root        10  0.0  0.0      0     0 ?        S    Apr09   0:00 [migration/0]
 ...
 ```
 
+To sort by **descending memory** usage `ps aux --sort -rss`.
+
+As above but **get first n lines** `ps aux --sort -rss | head -n15`.
+
 # chmod
 
 Change user, group, other permissions.
