@@ -12,7 +12,112 @@ PHP_VERSION = "7.2"
   to = "https://chasingcode.dev/blog"
   status = 301
 
+# [[redirects]]
+  # from = "/blog/*"
+  # to = "https://chasingcode.dev/blog/*"
+  # status = 301
+
 [[redirects]]
-  from = "/blog/*"
-  to = "https://chasingcode.dev/blog/*"
+  from = "/blog/fix-laravel-public-storage"
+  to = "https://chasingcode.dev/blog/fix-laravel-public-storage"
+  status = 301
+[[redirects]]
+  from = "/blog/welcome-new-new-blog"
+  to = "https://chasingcode.dev/blog/welcome-new-new-blog"
+  status = 301
+[[redirects]]
+  from = "/blog/wink-vs-jigsaw"
+  to = "https://chasingcode.dev/blog/wink-vs-jigsaw"
+  status = 301
+[[redirects]]
+  from = "/blog/supercharged-dynamic-vue-svg-icon-component"
+  to = "https://chasingcode.dev/blog/supercharged-dynamic-vue-svg-icon-component"
+  status = 301
+[[redirects]]
+  from = "/blog/simplified-dynamic-svg-icon-component"
+  to = "https://chasingcode.dev/blog/simplified-dynamic-svg-icon-component"
+  status = 301
+[[redirects]]
+  from = "/blog/reusable-create-update-form"
+  to = "https://chasingcode.dev/blog/reusable-create-update-form"
+  status = 301
+[[redirects]]
+  from = "/blog/fix-vuejs-netlify-routing"
+  to = "https://chasingcode.dev/blog/fix-vuejs-netlify-routing"
+  status = 301
+[[redirects]]
+  from = "/blog/vue-router-mouse-event-handling"
+  to = "https://chasingcode.dev/blog/vue-router-mouse-event-handling"
+  status = 301
+[[redirects]]
+  from = "/blog/php-simulate-exception-status"
+  to = "https://chasingcode.dev/blog/php-simulate-exception-status"
+  status = 301
+[[redirects]]
+  from = "/blog/update-enum-column-doctrine-exception"
+  to = "https://chasingcode.dev/blog/update-enum-column-doctrine-exception"
+  status = 301
+[[redirects]]
+  from = "/blog/laravel-global-url-helpers"
+  to = "https://chasingcode.dev/blog/laravel-global-url-helpers"
+  status = 301
+[[redirects]]
+  from = "/blog/speed-up-webpack-watch-windows"
+  to = "https://chasingcode.dev/blog/speed-up-webpack-watch-windows"
+  status = 301
+[[redirects]]
+  from = "/blog/simple-http-response-trait-laravel"
+  to = "https://chasingcode.dev/blog/simple-http-response-trait-laravel"
+  status = 301
+[[redirects]]
+  from = "/blog/useful-linux-commands"
+  to = "https://chasingcode.dev/blog/useful-linux-commands"
+  status = 301
+[[redirects]]
+  from = "/blog/my-first-laravel-package-silent-spam-filter"
+  to = "https://chasingcode.dev/blog/my-first-laravel-package-silent-spam-filter"
+  status = 301
+[[redirects]]
+  from = "/blog/how-to-install-httpie-windows-10"
+  to = "https://chasingcode.dev/blog/how-to-install-httpie-windows-10"
+  status = 301
+[[redirects]]
+  from = "/blog/developer-podcasts"
+  to = "https://chasingcode.dev/blog/developer-podcasts"
+  status = 301
+[[redirects]]
+  from = "/blog/make-safari-download-files-properly"
+  to = "https://chasingcode.dev/blog/make-safari-download-files-properly"
+  status = 301
+[[redirects]]
+  from = "/blog/laravel-withoutexceptionhandling-gotcha"
+  to = "https://chasingcode.dev/blog/laravel-withoutexceptionhandling-gotcha"
+  status = 301
+[[redirects]]
+  from = "/blog/laravel-missing-docs-firstor"
+  to = "https://chasingcode.dev/blog/laravel-missing-docs-firstor"
+  status = 301
+[[redirects]]
+  from = "/blog/php-handle-undefined-index-gracefully"
+  to = "https://chasingcode.dev/blog/php-handle-undefined-index-gracefully"
+  status = 301
+[[redirects]]
+  from = "/blog/omigosh-is-open-source"
+  to = "https://chasingcode.dev/blog/omigosh-is-open-source"
+  status = 301
+[[redirects]]
+  from = "/blog/2019-tech-radar"
+  to = "https://chasingcode.dev/blog/2019-tech-radar"
+  status = 301
+[[redirects]]
+  from = "/blog/vue-components-same-name-laravel-project"
+  to = "https://chasingcode.dev/blog/vue-components-same-name-laravel-project"
+  status = 301
+[[redirects]]
+  from = "/blog/javascript-convert-utc-server-time-to-local"
+  to = "https://chasingcode.dev/blog/javascript-convert-utc-server-time-to-local"
+  status = 301
+[[redirects]]
+  from = "/blog/javascript-disable-submit-button-form"
+  to = "https://chasingcode.dev/blog/javascript-disable-submit-button-form"
   status = 301
