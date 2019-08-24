@@ -1,7 +1,7 @@
 <nav class="hidden lg:flex items-center justify-end text-lg">
     <a
         title="{{ $page->siteName }} Blog"
-        href="/blog"
+        href="/blog?utm_source=omigo.sh"
         class="
             ml-6
             {{
@@ -15,7 +15,7 @@
 
     <a
         title="{{ $page->siteName }} About"
-        href="/about"
+        href="/about?utm_source=omigo.sh"
         class="
             ml-6
             {{

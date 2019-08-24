@@ -3,7 +3,7 @@
         <li class="pl-4">
             <a
                 title="{{ $page->siteName }} Blog"
-                href="/blog"
+                href="/blog?utm_source=omigo.sh"
                 class="
                     nav-menu__item
                     {{
@@ -18,7 +18,7 @@
         <li class="pl-4">
             <a
                 title="{{ $page->siteName }} About"
-                href="/about"
+                href="/about?utm_source=omigo.sh"
                 class="
                     nav-menu__item
                     {{

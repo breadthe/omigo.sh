@@ -16,7 +16,7 @@
 
     <h2 class="text-3xl font-serif mt-0">
         <a
-            href="{{ $post->getUrl() }}"
+            href="{{ $post->getUrl() }}?utm_source=omigo.sh"
             title="Read more - {{ $post->title }}"
             class="text-pink-dark hover:text-pink-darker font-extrabold leading-normal"
         >{{ $post->title }}</a>
@@ -28,7 +28,7 @@
                     class="overflow-hidden sm:mr-4 mb-4 sm:w-1/4 text-center"
             >
                 <a
-                        href="{{ $post->getUrl() }}"
+                        href="{{ $post->getUrl() }}?utm_source=omigo.sh"
                         title="Read more - {{ $post->title }}"
                         class="text-pink-dark hover:text-pink-darker font-extrabold"
                 >
@@ -48,7 +48,7 @@
     </section>
 
     <a
-        href="{{ $post->getUrl() }}"
+        href="{{ $post->getUrl() }}?utm_source=omigo.sh"
         title="Read more - {{ $post->title }}"
         class="uppercase text-sm tracking-wide mb-2 hover:no-underline text-pink-dark hover:text-pink-darker text-right"
     >Read Full Post</a>
